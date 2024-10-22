@@ -1,0 +1,117 @@
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.ModalContent {
+  background-color: #fff;
+  margin: 1% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+/* Additional styles for Product List */
+.ProductList {
+  margin-top: 20px;
+}
+
+.ProductList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ProductList li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+#productForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.EditBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#submit-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#delete-btn {
+  flex: 1;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ModalContent {
+      margin-top: 80px;
+      padding: 20px 24px 20px 24px; 
+  }
+
+  #productForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .form-group {
+      display: flex; 
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      margin-bottom: 15px;
+  }
+}

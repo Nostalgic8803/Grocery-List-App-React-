@@ -1,0 +1,21 @@
+#cart {
+    width: 40px;
+}
+
+.Header .Shopping {
+    position: relative;
+    text-align: right;
+}
+
+.Header .Shopping span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
