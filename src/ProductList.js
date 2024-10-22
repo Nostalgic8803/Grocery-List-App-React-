@@ -10,7 +10,7 @@ function ProductList({ products, onEdit, onDelete }) {
               <img
                 src={product.image}
                 alt={product.name}
-                style={{ width: "150px", height: "130px" }}
+                id="product-image"
               />
               <button id="edit-product" onClick={() => onEdit(product)}>
                 <iconify-icon icon="lucide:edit"></iconify-icon>

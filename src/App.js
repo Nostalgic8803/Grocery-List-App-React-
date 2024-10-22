@@ -50,7 +50,6 @@ function App() {
     setCurrentProduct(null);
   };
 
-  // Filter products based on search query
   const filteredProducts = products.filter(product => {
     const query = searchQuery.toLowerCase();
     return (
@@ -77,7 +76,7 @@ function App() {
         />
       )}
       <ProductList
-        products={filteredProducts}  // Show all filtered products
+        products={filteredProducts} 
         onEdit={openModal}
         onDelete={handleDeleteProduct}
       />
